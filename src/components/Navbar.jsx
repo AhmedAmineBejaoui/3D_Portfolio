@@ -42,7 +42,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src="src/assets/ahmed.svg" alt='logo' className='w-9 h-9 object-contain' />
+          <img src="https://scontent.ftun14-1.fna.fbcdn.net/v/t39.30808-6/467700253_919333743630826_5094015486625172716_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Z8Ha2Pxgkg0Q7kNvwE3Dbg3&_nc_oc=AdmenvVRYjMlPEZHkRXfYU4_sOuUCcrUGizHV_A2vFOwZ2t2pcZW-cFvyt_QlPIkKJk&_nc_zt=23&_nc_ht=scontent.ftun14-1.fna&_nc_gid=1J7uSndVlhOw1kdA9Q8-MQ&oh=00_AfG98-YMyOv9z9LuSiwprD7PIxV69amZ5IOaGxghZp08-g&oe=67F89851" alt='logo' className='w-9 h-9 object-contain rounded-full' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Ahmed Amin Bejaoui &nbsp;
             <span className='sm:block hidden'> | FullStack Mastery</span>
