@@ -181,7 +181,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "With a solid foundation in development and a keen interest in emerging tech, he stands out for his adaptability and eagerness to stay ahead in the ever-evolving tech landscape.",
     name: "Amna khmiri",
     designation: "developper",
     company: "OpusLab", 
