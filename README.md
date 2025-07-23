@@ -11,3 +11,4 @@ Currently, two official plugins are available:
 
 ## Features
 - View count statistics stored locally
+- Optimized star field on mobile for better performance

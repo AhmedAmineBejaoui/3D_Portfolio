@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, memo } from 'react';
 
 const Stats = () => {
   const [views, setViews] = useState(0);
@@ -17,4 +17,4 @@ const Stats = () => {
   );
 };
 
-export default Stats;
+export default memo(Stats);
