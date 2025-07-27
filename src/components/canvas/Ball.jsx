@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import {
   Float,
@@ -40,10 +40,20 @@ const Ball = (props) => {
 };
 
 const BallCanvas = ({ icon }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 500px)');
+    setIsMobile(mediaQuery.matches);
+    const handler = (e) => setIsMobile(e.matches);
+    mediaQuery.addEventListener('change', handler);
+    return () => mediaQuery.removeEventListener('change', handler);
+  }, []);
+
   return (
     <Canvas
       frameloop="demand"
-      dpr={[1, 2]}
+      dpr={isMobile ? 1 : [1, 2]}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>

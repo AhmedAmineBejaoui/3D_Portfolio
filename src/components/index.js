@@ -9,8 +9,6 @@ import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import Stats from './Stats';
 
-
-
 export {
   Hero,
   Navbar,
@@ -24,5 +22,5 @@ export {
   EarthCanvas,
   BallCanvas,
   ComputersCanvas,
-  StarsCanvas
-}
+  StarsCanvas,
+};
