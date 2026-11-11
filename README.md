@@ -1,13 +1,49 @@
-# React + Vite
+# Interactive 3D Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio frontend exploring interactive web presentation, 3D scenes and motion-driven UI.
 
-Currently, two official plugins are available:
+## Tech stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# 3D_portfolio
-# 3D_Portfolio
+- **Frontend:** React 18, Vite 6, JavaScript
+- **3D:** Three.js, React Three Fiber, Drei, Three Stdlib
+- **Interface & motion:** Tailwind CSS, Framer Motion, react-parallax-tilt
+- **Other integrations:** EmailJS and React Router
 
-## Features
-- View count statistics stored locally
+## Local setup
+
+**Prerequisites:** A supported Node.js release and npm.
+
+```bash
+git clone https://github.com/AhmedAmineBejaoui/3D_Portfolio.git
+cd 3D_Portfolio
+npm install
+npm run dev
+```
+
+Vite prints a local URL in the terminal.
+
+## Project scripts
+
+| Script | Purpose |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm run build` | Build the production bundle |
+| `npm run preview` | Preview the built site |
+| `npm run lint` | Run ESLint |
+
+## Repository structure
+
+- `src/` — application source, React components and assets
+- `public/` — public assets
+- `vite.config.js` — Vite configuration
+- `tailwind.config.js` — Tailwind configuration
+
+## Portfolio context
+
+This repository showcases frontend engineering, interactive visual composition and a modern React toolchain. See the source for exact implemented interactions.
+
+**Status:** Portfolio project. A public live deployment URL is not documented here.
+
+## Author
+
+[Ahmed Amin Bejaoui](https://github.com/AhmedAmineBejaoui)
