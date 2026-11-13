@@ -11,6 +11,6 @@ export default defineConfig({
     },
   },
   optimizeDeps: {
-    include: ['react-tilt'],
+    include: ['react-parallax-tilt'],
   },
 });

@@ -13,6 +13,7 @@ const ProjectCard = ({
   index,
   name,
   description,
+  context,
   tags,
   image,
   source_code_link,
@@ -28,11 +29,12 @@ const ProjectCard = ({
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
         <div className='relative w-full h-[230px]'>
-          <img
-            src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
-          />
+          {image ? <img src={image} alt={name} className="w-full h-full object-cover rounded-2xl" /> :
+            <div className="w-full h-full rounded-2xl border border-white/10 flex flex-col justify-center p-7 bg-primary">
+              <p className="text-secondary text-sm mb-3">{context}</p>
+              <p className="text-white text-3xl font-bold">{name}</p>
+            </div>}
+
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
@@ -98,4 +100,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");

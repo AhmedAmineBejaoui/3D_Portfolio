@@ -45,7 +45,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Ahmed Amin",
           from_email: form.email,
-          to_email: "bejaouiahmed053@gmail.com",
+          to_email: "ahmedamin.bejaoui@issatm.ucar.tn",
           message: form.message,
         },
         'n2y__a8ovfweQqMvQ'
@@ -80,6 +80,11 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <div className="mt-5 text-secondary space-y-2 break-words">
+          <p>Bizerte, Tunisia · +216 55 799 176</p>
+          <p><a href="mailto:ahmedamin.bejaoui@issatm.ucar.tn" className="underline">ahmedamin.bejaoui@issatm.ucar.tn</a></p>
+          <p className="flex gap-5"><a href="https://www.linkedin.com/in/ahmed-amin-bejaoui" target="_blank" rel="noreferrer" className="underline">LinkedIn</a><a href="https://github.com/AhmedAmineBejaoui" target="_blank" rel="noreferrer" className="underline">GitHub</a><a href="/CV_Ahmed_Amin_Bejaoui.pdf" download className="underline">Download CV (FR)</a></p>
+        </div>
 
         <form
           ref={formRef}

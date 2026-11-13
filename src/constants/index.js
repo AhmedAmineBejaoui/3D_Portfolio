@@ -29,6 +29,7 @@ import {
 } from "../assets";
 
 export const navLinks = [
+  { id: "projects", title: "Projects" },
   {
     id: "about",
     title: "About",
@@ -45,12 +46,12 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "AI & Data Science",
     icon: web,
   },
 
   {
-    title: "Backend Developer",
+    title: "Full-Stack Development",
     icon: backend,
   },
 ];
@@ -112,54 +113,71 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Full Stack developer - E-commerce",
-    company_name: "ISSAT Mateur",
-    icon: issat,
-    iconBg: "#F0F9FF",
-    date: "Feb 2025 - Apr 2025",
-    points: [
-      "Conception et développement d'une application web e-commerce full-stack avec React, TypeScript et Node.js",
-      "Création d'une API RESTful avec Express.js pour la gestion des produits, des catégories et des utilisateurs",
-      "Intégration d'une interface utilisateur responsive avec Tailwind CSS et React",
-      "Utilisation de React Query pour la gestion efficace des données côté client",
-      "Structuration du projet en architecture modulaire (client / serveur / shared)",
-      "Déploiement local avec Vite et configuration d’un environnement de développement performant",
-    ],
+    "title": "Data Science Intern",
+    "company_name": "Synent Technologies",
+    "icon": backend,
+    "iconBg": "#E6F2FF",
+    "date": "5 Sep – 15 Oct 2026",
+    "points": [
+      "Exploratory analysis of Netflix data and customer segmentation with K-Means.",
+      "Built scikit-learn pipelines for telecom churn and student performance prediction, with cross-validation, model evaluation and Streamlit interfaces."
+    ]
   },
   {
-    title: "Full Stack developer - Hotel Management System",
-    company_name: "OpusLab",
-    icon: opuslab,
-    iconBg: "#E6F2FF",
-    date: "mar2025 - mai 2025",
-    points: [
-      "Conception et développement d'une application full-stack de gestion hôtelière avec React, TypeScript et Node.js",
-      "Modélisation et implémentation d'une base de données PostgreSQL avec schéma relationnel ",
-      "Création d'une API RESTful avec Express.js pour la gestion des chambres, réservations et clients",
-      "Configuration de Drizzle ORM pour les migrations et les opérations CRUD",
-      "Développement d'un dashboard admin moderne avec React et Material-UI incluant :",
-      "• Tableaux de bord interactifs avec graphiques en temps réel (Recharts)",
-      "• Visualisation des données clés (taux d'occupation, revenus, statistiques)",
-      "• Design responsive avec dark/light mode",
-      "Mise en place d'un système sécurisé avec variables d'environnement et gestion des connexions",
-    ],
+    "title": "AI Agents Intern · Final-year project",
+    "company_name": "DnD Serv",
+    "icon": backend,
+    "iconBg": "#E6F2FF",
+    "date": "Feb – May 2026",
+    "points": [
+      "Designed and developed Devora: AI-assisted code review with specialized agents and a GraphRAG pipeline orchestrated with LangGraph.",
+      "Connected GitHub pull requests with code context and internal knowledge to generate review findings and correction suggestions.",
+      "FastAPI, Next.js, Neo4j, Qdrant, Docker, VPS deployment and CI/CD."
+    ]
   },
   {
-    title: "Full Stack developer - Airport Management System",
-    company_name: "OpusLab",
-    icon: opuslab,
-    iconBg: "#E6F2FF",
-    date: "Mars 2025 - mai 2025",
-    points: [
-      "Développement full-stack d'un système de gestion avec React/TS, Node.js/Express et PostgreSQL",
-      "Architecture modulaire : Frontend React 18 (Vite) + Backend TypeScript (Drizzle ORM)",
-      "Modélisation d'une base de données relationnelle (vols, portes, employés, passagers)",
-      "API REST sécurisée avec JWT, RBAC et validation Zod (25+ endpoints)",
-      "Dashboard interactif : Visualisations temps-réel (Recharts), KPI et export de données",
-      "Optimisations : Indexation SQL, cache Redis et chargement dynamique",
-      "UI moderne : Composants réutilisables (Tailwind CSS + Radix UI)",
-    ],
+    "title": "PHP Development Intern",
+    "company_name": "Tunisie Telecom · Centre Urbain Nord, Tunis",
+    "icon": backend,
+    "iconBg": "#E6F2FF",
+    "date": "Feb – May 2026",
+    "points": [
+      "Developed SMSPlus, a PHP/Laravel and Oracle pipeline for telecom CDR data.",
+      "FTP ingestion, CSV validation, staging, OCC transformations, SQL MERGE deduplication and load auditing; Docker and OCI8."
+    ]
   },
+  {
+    "title": "Full-Stack Intern",
+    "company_name": "Easy Ways Studio",
+    "icon": backend,
+    "iconBg": "#E6F2FF",
+    "date": "Jun – Aug 2025",
+    "points": [
+      "Developed Tunisian Chic, an e-commerce application with catalog, cart, orders, authentication and administration.",
+      "Worked on the SkillStream e-learning backend, the studio website and an interior-design startup website."
+    ]
+  },
+  {
+    "title": "Front-End Intern",
+    "company_name": "Eden Talents · Paris, remote",
+    "icon": backend,
+    "iconBg": "#E6F2FF",
+    "date": "Jul 2025",
+    "points": [
+      "Translated Figma designs into responsive React, Vite and Tailwind CSS pages for a recruitment website.",
+      "Reusable components, React Router navigation and light/dark themes."
+    ]
+  },
+  {
+    "title": "IT Support Intern",
+    "company_name": "SACEM Group",
+    "icon": backend,
+    "iconBg": "#E6F2FF",
+    "date": "Jun – Jul 2024",
+    "points": [
+      "User assistance and application support, network infrastructure, Nagios monitoring and Microsoft PowerApps document management."
+    ]
+  }
 ];
 
 const testimonials = [
@@ -191,92 +209,113 @@ const testimonials = [
 
 const projects = [
   {
-    name: "E-commerce",
-    description:
-      "Web-based platform for discovering, browsing, and purchasing products online, offering users a seamless shopping experience with secure authentication, product filtering, and responsive design — all powered by a modern full-stack architecture using React and Node.js.",
-    tags: [
+    "name": "Devora",
+    "context": "Final-year internship · DnD Serv · 2026",
+    "description": "AI-assisted GitHub code review combining specialized agents, LangGraph orchestration and GraphRAG retrieval over code and internal knowledge.",
+    "tags": [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        "name": "FastAPI",
+        "color": "text-secondary"
       },
       {
-        name: "PostegreSQL",
-        color: "green-text-gradient",
+        "name": "LangGraph",
+        "color": "text-secondary"
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        "name": "Neo4j",
+        "color": "text-secondary"
       },
       {
-        name: "Express",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Node.js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Drizzle ORM",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Radix UI",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Recharts",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Zod",
-        color: "pink-text-gradient",
-      },
+        "name": "Qdrant",
+        "color": "text-secondary"
+      }
     ],
-    image: ecommerce,
-    source_code_link: "https://github.com/AhmedAmineBejaoui/E-commerce",
+    "source_code_link": "https://github.com/AhmedAmineBejaoui/ai-code-review-platform"
   },
   {
-    name: "Système de Gestion Hôtelière",
-    description:
-      "Web-based hotel management system designed to streamline reservations, room availability, and customer check-in/check-out processes, offering administrators and staff an intuitive interface for efficient day-to-day operations.",
-    tags: [
+    "name": "SMSPlus",
+    "context": "Internship · Tunisie Telecom · 2026",
+    "description": "Telecom CDR data pipeline: FTP ingestion, strict CSV validation, Oracle staging, OCC transformation, deduplication and audit trails.",
+    "tags": [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        "name": "PHP",
+        "color": "text-secondary"
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
+        "name": "Laravel",
+        "color": "text-secondary"
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
+        "name": "Oracle",
+        "color": "text-secondary"
       },
+      {
+        "name": "Docker",
+        "color": "text-secondary"
+      }
     ],
-    image: hotel,
-    source_code_link: "https://github.com/AhmedAmineBejaoui/hotel_mangement_system",
+    "source_code_link": "https://github.com/AhmedAmineBejaoui/SMSPlus"
   },
   {
-    name: "System de gestion de l'aéroport",
-    description:
-      "An all-in-one airport management system that enables efficient coordination of flights, passenger services, and logistics, offering a centralized interface for staff and administrators to ensure smooth airport operations.",
-    tags: [
+    "name": "Telco Customer Churn",
+    "context": "Data Science internship · Synent · 2026",
+    "description": "Churn prediction on 7,043 customer records using a preprocessing pipeline and logistic regression. Held-out ROC AUC: 0.842; Streamlit prediction interface.",
+    "tags": [
       {
-        name: "react",
-        color: "green-text-gradient",
+        "name": "Python",
+        "color": "text-secondary"
       },
       {
-        name: "TypeScript",
-        color: "blue-text-gradient",
+        "name": "scikit-learn",
+        "color": "text-secondary"
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+        "name": "Streamlit",
+        "color": "text-secondary"
+      }
     ],
-    image: aireport,
-    source_code_link: "https://github.com/AhmedAmineBejaoui/aireport_management_system",
+    "source_code_link": "https://github.com/AhmedAmineBejaoui/synent-task9-telcochurn-ahmed"
   },
+  {
+    "name": "Student Performance",
+    "context": "Data Science internship · Synent · 2026",
+    "description": "Compared three regression models with cross-validation and hyperparameter tuning. Random Forest test RMSE: 1.204/20, using previous grades among the features.",
+    "tags": [
+      {
+        "name": "Python",
+        "color": "text-secondary"
+      },
+      {
+        "name": "Random Forest",
+        "color": "text-secondary"
+      },
+      {
+        "name": "Streamlit",
+        "color": "text-secondary"
+      }
+    ],
+    "source_code_link": "https://github.com/AhmedAmineBejaoui/synent-task8-studentperformance-ahmedaminebejaoui"
+  },
+  {
+    "name": "Hotel Management System",
+    "context": "Professional training · OpusLab · 2025",
+    "description": "Full-stack management of rooms, bookings and customers with a dashboard and relational data model.",
+    "tags": [
+      {
+        "name": "React",
+        "color": "text-secondary"
+      },
+      {
+        "name": "TypeScript",
+        "color": "text-secondary"
+      },
+      {
+        "name": "PostgreSQL",
+        "color": "text-secondary"
+      }
+    ],
+    "source_code_link": "https://github.com/AhmedAmineBejaoui/hotel_mangement_system"
+  }
 ];
 
 export { services, technologies, experiences, testimonials, projects };

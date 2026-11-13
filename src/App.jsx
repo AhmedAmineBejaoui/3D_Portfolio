@@ -1,3 +1,4 @@
+import Qualifications from "./components/Qualifications";
 import { BrowserRouter } from "react-router-dom";
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas, Stats } from "./components";
 
@@ -19,6 +20,7 @@ const App = () => {
         </div>
         <About/>
         <Experience/>
+        <Qualifications/>
         <Tech/>
         <Works/>
         <Feedbacks/>

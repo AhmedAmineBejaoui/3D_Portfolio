@@ -45,9 +45,12 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I&apos;m Ahmed Amin Bejaoui, a second-year Computer Science bachelor&apos;s
-        student at ISSAT Mateur. <br /> Specializing as a junior MERN stack
-        developer, I focus on building dynamic web applications. Additionally,  enhancing my versatility in both back-end and front-end development.
+        I&apos;m Ahmed Amin Bejaoui, a Computer Science graduate in Software Engineering
+        and Information Systems from ISSAT Mateur (2023–2026). Since September 2026,
+        I have been studying engineering at ISAMM and pursuing an M1 research master
+        in Computer Science at ISI Ariana, Tunis El Manar. My work combines AI agents,
+        GraphRAG, Data Science and full-stack development. Based in Bizerte, Tunisia,
+        I am seeking a work-study opportunity to apply these skills to practical projects.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
